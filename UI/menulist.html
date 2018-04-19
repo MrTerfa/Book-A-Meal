@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<title>Set Meal</title>
+	<title>Book a meal</title>
+	<link rel="stylesheet" href="stylesheet/styles.css">
 </head>
 <body>
-	<header>Set a meal</header>
-	<div>
-		<section>
-			<h4>Set a meal</h4>
+	<header>BOOK A MEAL</header>
+	<div id="wrapper">
+		<section class="col-4">
+			<h4>View Menu</h4>
 			<form>
-				<select name="days-of-the-week">
-					<option value="">Sunday</option>
-					<option value="">Monday</option>
-					<option value="">Tuesday</option>
-					<option value="">Wednesday</option>
-					<option value="">Thursday</option>
-					<option value="">Friday</option>
-					<option value="">Saturday</option>
-				</select>
-				<button type="button">Set meal</button>
+				<input name= "date" type="date">
+				<button type="button">View Menu</button>
 			</form>
 		</section>
-		<section>
+
+		<div class="col-1">
+		</div>
+
+		<section class="col-7">
 			<ul>
-				<li>Fried Rice and Chicken<button>Purchase meal</button></li>
-				<li>Eba and Ewedu<button>Purchase meal</button></li>
+				<li>Fried Rice and Chicken<button>Order Menu</button></li>
+				<li>Eba and Ewedu<button>Order Menu</button></li>
 			</ul>
 		</section>
 	</div>

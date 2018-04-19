@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-	<title>meal</title>
+	<title>Book a meal</title>
+	<link rel="stylesheet" href="stylesheet/styles.css">
 </head>
 <body>
-	<header>Manage Meal</header>
-	<div>
-		<section>
+	<header>BOOK A MEAL</header>
+	<div id="wrapper">
+		<section class="col-4">
 			<h4>Add a Meal</h4>
 			<form>
 				<input name="menu-name" type="text">
@@ -15,7 +17,9 @@
 				<button type="button">Add Menu</button>
 			</form>
 		</section>
-		<section>
+		<div class="col-1">
+		</div>
+		<section class="col-7">
 			<h4>List of Meal</h4>
 			<ul>
 				<li>Fried Rice and Chicken<button>delete meal</button><button>Edit meal</button></li>

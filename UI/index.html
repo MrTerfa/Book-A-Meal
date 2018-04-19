@@ -1,26 +1,47 @@
 <!DOCTYPE html>
 <html>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
 	<title>Book a meal</title>
+	<link rel="stylesheet" href="stylesheet/styles.css">
 </head>
 <body>
-	<header>BOOK A MEAL</header>
-	<div>
-		<section>
-			<h4>Sign Up to Enjoy our Services</h4>
+	<header><h1>BOOK A MEAL</h1></header>
+	<div id="wrapper">
+		<section class= "col-7">
+			<h2>Sign Up</h2>
 			<form>
-				<input name="email" type="email">
-				<input name="password" type="password">
-				<input name="confirmPassword" type="password">
+				<div class ="form-break">
+					<label for="email">Email</label>
+					<input name="email" type="email">
+				</div>
+				<div class ="form-break">
+					<label for="password">Password</label>
+					<input name="password" type="password">
+				</div>
+				<div class ="form-break">
+					<label for="confirmPassword">Confirm Password</label>
+					<input name="confirmPassword" type="password">	
+				</div>
 				<button type="button">Sign up</button>
 			</form>
 		</section>
-		<section>
-			<h4>Sign In</h4>
+
+		<div class="col-1">
+		</div>
+
+		<section class="col-4">
+			<h2>Sign In</h2>
 			<form>
-				<input name="email" type="email">
-				<input name="password" type="password">
+				<div class ="form-break">
+					<label for="email">Email</label>
+					<input name="email" type="email">
+				</div>
+				<div class ="form-break">
+					<label for="password">Password</label>
+					<input name="password" type="password">
+				</div>
 				<button type="button">Sign in</button>
 			</form>
 		</section>
