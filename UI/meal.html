@@ -7,24 +7,51 @@
 	<link rel="stylesheet" href="stylesheet/styles.css">
 </head>
 <body>
-	<header>BOOK A MEAL</header>
+	<header><h1>BOOK A MEAL</h1></header>
 	<div id="wrapper">
 		<section class="col-4">
-			<h4>Add a Meal</h4>
+			<h2>Add a Meal</h2>
+			<hr/>
 			<form>
-				<input name="menu-name" type="text">
-				<input name="menu-price" type="text">
-				<button type="button">Add Menu</button>
+				<div class ="form-break">
+					<label for="menu-name">Menu Name</label>
+					<input name="menu-name" type="text">
+				</div>
+				<div class ="form-break">
+					<label for="menu-price">Menu Price</label>
+					<input name="menu-price" type="text">
+				</div>
+				<div class ="form-break">
+					<button type="button">Add Menu</button>
+				</div>
 			</form>
 		</section>
+
 		<div class="col-1">
 		</div>
+
 		<section class="col-7">
-			<h4>List of Meal</h4>
-			<ul>
-				<li>Fried Rice and Chicken<button>delete meal</button><button>Edit meal</button></li>
-				<li>Eba and Ewedu<button>delete meal</button><button>Edit meal</button></li>
-			</ul>
+			<h2>List of Meal</h2>
+			<hr />
+			<table>
+				<thead></thead>
+				<tbody>
+					<div class="table-extra">
+						<tr>
+							<td>Fried Rice and Chicken</td>
+							<td><button class="edit">Edit meal</button></td>
+							<td><button class="delete">Delete meal</button></td>
+						</tr>
+					</div>
+					<div class="table-extra">
+					<tr>
+						<td>Eba and Ewedu</td>
+						<td><button class="edit">Edit meal</button></td>
+						<td><button class="delete">Delete meal</button></td>
+					</tr>
+				</div>
+				</tbody>
+			</table>
 		</section>
 	</div>
 </body>
