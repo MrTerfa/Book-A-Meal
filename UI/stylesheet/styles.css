@@ -1,121 +1,159 @@
+html,body{
+  height: 100%;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
 @font-face {
     font-family: myFont;
     src: url(../fonts/OpenSans-Regular.ttf);
 }
-*{
-    box-sizing: border-box;
+@font-face {
+  font-family: myFontII;
+  src: url(../fonts/Pacifico-Regular.ttf);
 }
-body{
-	background-color: #f7f7f7;
-	margin: 0;
-	padding: 0;
-	font-family: myFont;
-	font-size: 0.8rem;
+#container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: ffffff;
 }
-header{
-	display: flex;
-	justify-content: center;
-	background: linear-gradient(#219b06, #3ab51e);
-	background-color: #7eed53;
-	color: #ffffff;
+.left {
+  background-image: url("../images/food.jpg");
+  background-size: cover;
+  width: 100%;
+  opacity: 0.8;
+  flex: 1;
 }
-#wrapper{
-	background-color: #ffffff;
-	display: flex;
-	flex-direction: row;
-	margin: 0 auto;
-	width: 71%;
-	align-content: space-between;
-	padding:2%;
-	align-items: baseline;
-  }
-  .col-1{
-  	width:8.33%;
-  }
-  .col-2{
-	width: 16.66%;
-  }
-  .col-3{
-  	width:24.99%;
-  }
-  .col-4{
-  	width: 31.32%;
-  	padding: 0 1%;
-  }
-  .col-5{
-  	width: 41.65%;
-  }
-  .col-6{
-  	width:49.98%;
-  }
-  .col-7{
-  	width:56.31%;
-  	padding:0% 1%;
-  }
-  .col-8{
-  	width:66.64%;
-  }
-  .col-9{
-  	width:74.97%;
-  }
-  .col-10{
-  	width:83.3%;
-  }
-  .col-11{
-  	width: 91.63%;
-  }
-  section{
-  	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  }
-  input[type=text],input[type=email],input[type=password] {
-    width: 100%;
-    padding: 3% 4%;
-    border: 1px solid #cfd2d6;
-    border-radius: 3px;
-    box-sizing: border-box;
+.left:hover {
+  opacity: 1;
 }
-input[type=text],input[type=email],input[type=password]:focus{
-	outline: none;   
+.left h1 {
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: myFontII;
+  color: #ad9c06;
 }
-.form-break{
-  	display: flex;
-  	flex-direction: column;
-  	margin:4% 0;
-  }
- label{
-  	margin-bottom: 0.5rem;
-  }
-  button{
-  	padding: 0.5rem 2rem;
-  	font-weight: bold;
-  	background: #b5a31e;
-  	border: 1px solid #99891a;
-  	border-radius: 2px;
-  	outline: none;
-  }
-  .delete{
-  	background: #ce0000;
-  	color:#ffffff;
-  	border: 1px solid #ce0000;#006ace
-  }
-  .edit{
-  	background: #006ace;
-  	color:#ffffff;
-  	border: 1px solid #006ace;
-  }
-  .unstyled{
-  	list-style-type: none;
-  	margin: 0;
-  	padding:0;
-  }
-  .unstyled li{
-  	border-bottom: 1px solid #d3d3d3;
-  	padding: 0.7rem;
-  }
-  table{
-  	width: 100%;
-  }
+.right {
+  flex: 2;
+}
+.right >.signin, footer{
+  height: 5%;
+  background:#567c45;
+}
+.signup{
+  height: 90%;
+}
+.right footer{
+  height: 5%;
+}
 
-  .table-extra{
-  	margin-bottom: 2rem 0;
-  }  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**{  
+  box-sizing: border-box;
+  width:100%;
+  margin: 0;
+  padding: 0;
+  overflow-z: hidden;
+}
+
+@font-face {
+    font-family: myFont;
+    src: url(../fonts/OpenSans-Regular.ttf);
+}
+*/
+/*
+.container{
+  display: flex;
+  display-direction:column;
+  min-height: 100%;
+ }
+.split{
+  box-sizing: border-box;
+  width: 50%;
+}
+.left{
+  background-image: url("../images/food.jpg");
+  background-size: cover;
+}
+.left .transBox{
+  width: 100%;
+  height: 100%;
+  background-color:#edcaa5;
+  opacity: 0.4;
+}
+*/
+ 
