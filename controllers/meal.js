@@ -1,3 +1,16 @@
-class Meal(){
-    
+class Meal{
+
+    getAllMeals(){
+
+    }
+    addAMeal(){
+
+    }
+    updateMeal(){
+
+    }
+    deleteMeal(){
+        
+    }
+
 }
