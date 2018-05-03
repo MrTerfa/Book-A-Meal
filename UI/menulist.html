@@ -7,25 +7,59 @@
 	<link rel="stylesheet" href="stylesheet/styles.css">
 </head>
 <body>
-	<header>BOOK A MEAL</header>
-	<div id="wrapper">
-		<section class="col-4">
-			<h4>View Menu</h4>
-			<form>
-				<input name= "date" type="date">
-				<button type="button">View Menu</button>
-			</form>
-		</section>
-
-		<div class="col-1">
+	<header class="top-section">
+		<a href="index.html">Book a Meal</a>
+	</header>
+	<div class="wrapper">
+		<div class="col-left">
+			<h3>Available Meals</h3>
+				<article class="food_wrapper">
+					<div class="food_img">
+						<img src="../UI/images/food.jpg">
+					</div>
+					<div class="food_desc">
+						<h4>Fried Rice</h4>
+						<p>N500</p>
+					</div>
+					<div class="food_action">
+						<button>Place Order</button>
+					</div>
+				</article>
+		
+				<article class="food_wrapper">
+					<div class="food_img">
+						<img src="../UI/images/food.jpg">
+					</div>
+					<div class="food_desc">
+						<h4>Fried Rice</h4>
+						<p>N500</p>
+					</div>
+					<div class="food_action">
+						<button>Place Order</button>
+					</div>
+				</article>
+		
+				<article class="food_wrapper">
+					<div class="food_img">
+						<img src="../UI/images/food.jpg">
+					</div>
+					<div class="food_desc">
+						<h4>Fried Rice</h4>
+						<p>N500</p>
+					</div>
+					<div class="food_action">
+						<button>Place Order</button>
+					</div>
+				</article>
 		</div>
-
-		<section class="col-7">
-			<ul>
-				<li>Fried Rice and Chicken<button>Order Menu</button></li>
-				<li>Eba and Ewedu<button>Order Menu</button></li>
-			</ul>
-		</section>
+		
+		<div class="col-right">
+			<h3>View Menu</h3>
+			<form>
+				<input name="date" type="date">
+				<button type="submit">View Menu</button>
+			</form>
+		</div>
 	</div>
 </body>
 </html>
